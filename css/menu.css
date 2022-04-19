@@ -1,0 +1,48 @@
+.cajamenu { 
+    display: flex;            
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    list-style: none;      
+    background: #03a9f4;    
+    padding: 0;       
+}
+
+.menu {
+    flex-basis: 240px;
+    z-index: 2;    
+    border: #ffffff 1px solid;    
+}
+
+.cajasubmenu {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    list-style: none;
+    position: absolute;
+    display: none;
+    background: #113CFC;
+    width: 240px;
+    padding: 0;
+     
+}
+
+.submenu {
+    position: relative;
+}
+
+.vinculomenu {   
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: .5em;    
+}
+
+li:hover > ul {
+    display: block;
+}
+
+.cajamenu li:hover {
+    background: rgba(105, 218, 219, .5);
+}

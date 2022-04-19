@@ -1,0 +1,185 @@
+/*==================================================
+                        GLOBALES
+====================================================*/
+html {
+    box-sizing: border-box;
+    /** Reset para REMS - 62.5% = 10px de 16px **/
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+    border: #03a9f4 2px solid;
+}
+
+img {
+    /* para imagenes responsivas */
+    max-width: 100%;
+}
+
+.contenedor {
+    width: 95%;
+    /* Toma todo el espacio disponibles sin pasar de 1200px */
+    max-width: 120rem;
+    margin: 0 auto;    
+}
+
+/** Para Texto **/
+
+h1 {
+    font-size: 3.8rem;
+}
+
+h2 {
+    font-size: 3.4rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+h4 {
+    font-size: 2.6rem;
+}
+
+/*==================================================
+                     UTILIDADES
+====================================================*/
+
+.fw-300 {
+    font-weight: 300;
+}
+
+.centrar-texto {
+    text-align: center;
+}
+
+/*==================================================
+                      ENCABEZADO
+====================================================*/
+
+.site-header.inicio {
+    background-image: url(../img/header.jpg);
+    background-position: center center;
+    background-size: cover;
+    /*'vh' es el viewport para alcanzar la altura de pantalla*/
+    height: 100vh;
+    min-height: 60rem;
+}
+
+.barra {
+    padding-top: 3rem;
+}
+
+@media (min-width: 768px) {
+    .barra {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.contenido-header {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .contenido-header {
+        text-align: left;
+    }
+}
+
+.contenido-header h1 {
+    color: #030303;
+    padding-bottom: 2rem;
+    max-width: 60rem;
+    line-height: 2;
+}
+
+/** Navegacion **/
+
+.navegacion a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 2.2rem;
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .navegacion a {
+        display: inline-block;
+        margin-right: 2rem;
+        font-size: 1.8rem;
+    }
+    /** para quitar el margen de 20px al ultimo elemento **/
+    .navegacion a:last-of-type {
+        margin: 0;
+    }
+}
+
+.navegacion a:hover {
+    color: #71B100;
+}
+
+/** SECCION INFORMACION **/
+
+@media (min-width: 768px) {
+    .iconos-nosotros {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.icono {
+    text-align: center;
+}
+
+.fperfil {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin-top: 60px;
+    object-fit: cover;
+}
+
+@media (min-width: 768px) {
+    .icono {
+        flex-basis: calc(33.3% - 1rem);
+    }
+}
+
+.icono h3 {
+    text-transform: uppercase;
+}
+
+/** Imagen Contacto  **/
+
+.imagen-contacto {
+    background-image: url(../img/header.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 40rem;
+    display: flex;
+    align-items: center;
+}
+
+.contenido-contacto {
+    flex: 0 0 95%;
+    color: #ffffff;
+}
+
+.contenido-contacto p {
+    font-size: 1.8rem;
+}
